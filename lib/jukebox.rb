@@ -64,13 +64,11 @@ def run(songs)
       list(songs)
     when "help"
       help
-        
+    when "exit"
+      exit_jukebox    
     else
       puts "Invalid input, please try again"
     end
-    puts "Please enter a command:"
-    user_response = gets.chomp
   end
-  exit_jukebox
 end
   
