@@ -52,7 +52,7 @@ def run(songs)
   help
   input =""
   
-  while do
+  while 
     puts "Please enter a command:"
     
     input = gets.strip
