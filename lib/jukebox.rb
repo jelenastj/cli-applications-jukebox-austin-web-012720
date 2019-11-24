@@ -52,14 +52,22 @@ def run(songs)
   help
   input =""
   
-  if input == "exit"
-     exit_jukebox
-     break
-   elsif input == "help"
-     help
-   elsif input == "list"
-     list
-   elsif input == "play"
-     play
-   end
- end
+  while 
+    puts "Please enter a command:"
+    
+    input = gets.strip
+    
+    case input
+    when "play"
+      play(songs)
+      when "list"
+      list(songs)
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
+      break
+    end
+  end
+end
+  
